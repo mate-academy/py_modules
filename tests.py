@@ -29,7 +29,3 @@ def test_report_none():
     """
     work_three = Log("Tony", 'Task4')
     assert work_three.report() == "Worker or Task doesnt exists"
-
-
-if __name__ == '__main__':
-    pass

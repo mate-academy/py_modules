@@ -32,7 +32,8 @@ class Log:
         :return:
         """
         if self.confirm():
-            return f"Please pay {self.task_confirm.get_rate()} to {self.worker} for {self.task}!"
+            return f"Please pay {self.task_confirm.get_rate()} \
+            to {self.worker} for {self.task}!"
         return f"Worker or Task doesnt exists"
 
 
