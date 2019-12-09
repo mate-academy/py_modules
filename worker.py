@@ -1,3 +1,6 @@
+'''
+Module worker
+'''
 class Worker:
     '''
     Worker class

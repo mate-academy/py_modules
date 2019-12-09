@@ -1,3 +1,6 @@
+'''
+Module task
+'''
 class Task:
     '''
     Parent class for task

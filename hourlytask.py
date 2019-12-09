@@ -1,3 +1,6 @@
+'''
+Module hourlytask
+'''
 import task
 
 

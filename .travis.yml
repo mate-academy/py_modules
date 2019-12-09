@@ -5,6 +5,6 @@ install:
   - pip install -r requirements.txt
 script:
   - pytest
-  - flake8 *.py
-  - pylint *.py
+  - flake8 log hourlytask task worker
+  - pylint log hourlytask task worker
   - mypy --ignore-missing-imports .
