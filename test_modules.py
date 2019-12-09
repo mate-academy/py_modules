@@ -3,6 +3,7 @@ import paymentperhour
 import fixedpayment
 import log
 
+
 def test_report():
     worker1 = worker.Worker("Bill")
     worker2 = worker.Worker("John")

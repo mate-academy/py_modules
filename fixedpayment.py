@@ -24,3 +24,7 @@ class FixedPayment(Task):
     def get_payment(self):
         """return task payment"""
         return self._payment
+
+
+if __name__ == "__main__":
+    pass

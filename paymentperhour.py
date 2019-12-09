@@ -26,3 +26,7 @@ class PaymentPerHour(Task):
     def get_payment(self):
         """return task payment per hour * hours worked"""
         return self._payment_per_hour * self._hours_worked
+
+
+if __name__ == "__main__":
+    pass

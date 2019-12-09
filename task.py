@@ -5,6 +5,7 @@ Classes
 Task
 """
 
+
 class Task:
     """parent class task
     Attributes
@@ -23,3 +24,7 @@ class Task:
     def get_name(self):
         """return task name"""
         return self._task_name
+
+
+if __name__ == "__main__":
+    pass

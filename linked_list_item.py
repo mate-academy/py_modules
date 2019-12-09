@@ -24,3 +24,7 @@ class Item:
     def task_payment(self):
         """return task payment"""
         return self._task_payment
+
+
+if __name__ == "__main__":
+    pass

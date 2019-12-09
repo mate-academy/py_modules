@@ -10,7 +10,7 @@ To run all style checkers and tests use commands:
 
 `pytest `
 
-`flake8 log worker task linked_list linked_list_item paymentperhour fixedpayment`
+`flake8 .`
 
 `pylint log worker task linked_list linked_list_item paymentperhour fixedpayment`
 

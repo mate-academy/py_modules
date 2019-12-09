@@ -33,7 +33,6 @@ class List:
             new.previous = self.head
             self.head.next = self.head = new
 
-
     def delete(self):
         """
         Delete item from list
@@ -45,3 +44,7 @@ class List:
             self.head.next = None
             return for_del
         raise IndexError
+
+
+if __name__ == "__main__":
+    pass

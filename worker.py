@@ -34,7 +34,8 @@ class Worker:
         log - the log in which we write
         """
         self._tasks_in_process.remove(task_confirm)
-        log.confirm(self._name, task_confirm.get_name(), task_confirm.get_payment())
+        log.confirm(self._name, task_confirm.get_name(),
+                    task_confirm.get_payment())
 
     def take_task(self, task_in_process):
         """Add task in _tasks_in_process list
