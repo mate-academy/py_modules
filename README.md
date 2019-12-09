@@ -10,8 +10,8 @@ To run all style checkers and tests use commands:
 
 `pytest `
 
-`flake8 log worker task linked_list`
+`flake8 log worker task linked_list linked_list_item paymentperhour fixedpayment`
 
-`pylint log worker task linked_list`
+`pylint log worker task linked_list linked_list_item paymentperhour fixedpayment`
 
 `mypy --ignore-missing-imports .`
