@@ -1,5 +1,5 @@
 """worker module"""
-import registerContainer
+import register_container
 
 
 class Worker:
@@ -7,7 +7,7 @@ class Worker:
     def __init__(self, worker_id, name):
         self.worker_id = worker_id
         self.name = name
-        self.tasks = registerContainer.Register()
+        self.tasks = register_container.Register()
 
     def get_name(self):
         """get worker name"""
