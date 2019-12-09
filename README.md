@@ -6,3 +6,12 @@ To deploy project on your local machine create new virtual environment and execu
 
 `pip install -r requirements.txt`
 
+To run all style checkers and tests use commands:
+
+`pytest `
+
+`flake8 log worker task linked_list`
+
+`pylint log worker task linked_list`
+
+`mypy --ignore-missing-imports .`
