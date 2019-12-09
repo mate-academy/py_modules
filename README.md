@@ -6,3 +6,10 @@ To deploy project on your local machine create new virtual environment and execu
 
 `pip install -r requirements.txt`
 
+'pytest'
+
+'flake8 .'
+
+'pylint log register worker task test_modules'
+
+'mypy --ignore-missing-imports .'
