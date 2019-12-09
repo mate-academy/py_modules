@@ -1,7 +1,9 @@
 """
 module for log representation
 """
-from payment import Payment, HourlyPaymentPerTask, FixedPaymentPerTask
+from fixed_payment import FixedPaymentPerTask
+from hourly_payment import HourlyPaymentPerTask
+from payment import Payment
 
 
 class MyLog:

@@ -1,6 +1,8 @@
+from fixed_payment import FixedPaymentPerTask
+from fixed_task import FixedTask
+from hourly_payment import HourlyPaymentPerTask
+from hourly_task import HourlyTask
 from log import MyLog
-from payment import HourlyPaymentPerTask, FixedPaymentPerTask
-from tasks import HourlyTask, FixedTask
 from worker import Worker
 
 
