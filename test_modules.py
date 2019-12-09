@@ -1,9 +1,13 @@
+"""Test py_modules"""
+
+
 import log
 import task
 import worker
 
 
 def test_repo():
+    """test"""
     bill = worker.Worker('Bill')
     john = worker.Worker('John')
     log_file = log.Log()

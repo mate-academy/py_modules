@@ -10,6 +10,6 @@ To deploy project on your local machine create new virtual environment and execu
 
 'flake8 .'
 
-'pylint log register worker task '
+'pylint log register worker task test_modules'
 
 'mypy --ignore-missing-imports .'
