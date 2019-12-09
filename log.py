@@ -24,10 +24,8 @@ class Log:
 
     def report(self):
         """Return report that contains workers names and earnings"""
-        rep = ''
-        for name, money in self.database.items():
-            rep += f'{name}\t${money}\n'
-        return rep
+        return '\n'.join((f'{name}\t${money}'
+                          for name, money in self.database.items()))
 
     def get_database(self):
         """Return database"""
