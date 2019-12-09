@@ -1,4 +1,4 @@
-from log import Log
+from log import MyLog
 from payment import HourlyPaymentPerTask, FixedPaymentPerTask
 from tasks import HourlyTask, FixedTask
 from worker import Worker
@@ -12,6 +12,6 @@ def test_report():
     t2 = FixedTask(w2, 30, True)
     p1 = HourlyPaymentPerTask(w1, t1)
     p2 = FixedPaymentPerTask(w2, t2)
-    logger = Log(p1, p2)
+    logger = MyLog(p1, p2)
     assert logger.report() == """Bill\t$20
 John\t$30"""

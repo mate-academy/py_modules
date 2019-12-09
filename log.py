@@ -4,7 +4,7 @@ module for log representation
 from payment import Payment, HourlyPaymentPerTask, FixedPaymentPerTask
 
 
-class Log:
+class MyLog:
     """
     Log class represents information about task and worker
     which connected with each payment.
