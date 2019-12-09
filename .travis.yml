@@ -6,5 +6,5 @@ install:
 script:
   - pytest
   - flake8 .
-  - pylint {all modules}
+  - pylint tests task hourly fixed worker log
   - mypy --ignore-missing-imports .

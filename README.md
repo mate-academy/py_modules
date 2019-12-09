@@ -10,8 +10,8 @@ To run all style checkers and tests use commands:
 
 `pytest `
 
-`flake8 `
+`flake8 .`
 
-`pylint .`
+`pylint tests task hourly fixed worker log`
 
 `mypy --ignore-missing-imports .`
