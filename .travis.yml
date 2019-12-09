@@ -6,5 +6,5 @@ install:
 script:
   - pytest
   - flake8 .
-  - pylint {all modules}
+  - pylint log worker task linked_list linked_list_item paymentperhour fixedpayment
   - mypy --ignore-missing-imports .
