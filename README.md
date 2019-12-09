@@ -8,8 +8,8 @@ To deploy project on your local machine create new virtual environment and execu
 
 `pytest `
 
-`flake8 *.py`
+`flake8 log hourlytask task worker`
 
-`pylint *.py`
+`pylint log hourlytask task worker`
 
 `mypy --ignore-missing-imports .`
