@@ -1,10 +1,10 @@
 language: python
 python:
-  - "3.6"
+  - "3.8"
 install:
   - pip install -r requirements.txt
 script:
   - pytest
   - flake8 .
-  - pylint {all modules}
+  - pylint log worker task
   - mypy --ignore-missing-imports .
