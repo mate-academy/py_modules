@@ -12,6 +12,14 @@ pytest
 
 flake8 .
 
-pylint {all modules}
+pylint test_modules.py
+
+pylint log.py
+
+pylint tasks.py
+
+pylint day_plan.py
+
+pylint worker.py
 
 mypy --ignore-missing-imports .
