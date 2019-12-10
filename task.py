@@ -25,19 +25,12 @@ class Task:
         """
         return self._tasks
 
-    def get_price(self):
-        """
-        Check what type of payment task has
-        :return:
-        """
-        return self.price
-
-    def get_rate(self):
+    def get_rate(self, price):
         """
         Return total price
         :return:
         """
-        self.price = self.get_price()
+        self.price = price
         return f"{self.price}$"
 
 

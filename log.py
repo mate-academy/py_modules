@@ -33,13 +33,14 @@ class MyLog:
         Ask user to pay
         :return:
         """
-        if self.task in self.task_confirm.hour_tasks:
-            self.task_confirm.price = Hourly(self.task).price
-        else:
-            self.task_confirm.price = Fixed(self.task).price
         if self.confirm():
-            return f"Please pay {self.task_confirm.get_rate()} \
-            to {self.worker} for {self.task}!"
+            if self.task in self.task_confirm.hour_tasks:
+                self.task_confirm.price = Hourly(self.task).price
+            else:
+                self.task_confirm.price = Fixed(self.task).price
+            return f"Please pay " \
+                   f"{self.task_confirm.get_rate(self.task_confirm.price)}" \
+                   f" to {self.worker} for {self.task}!"
         return f"Worker or Task doesnt exists"
 
 
