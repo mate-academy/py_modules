@@ -1,8 +1,8 @@
 """
 task module
 """
-from hourly import Hourly
-from fixed import Fixed
+# from hourly import Hourly
+# from fixed import Fixed
 
 
 class Task:
@@ -12,9 +12,11 @@ class Task:
     """
 
     def __init__(self, task_name):
-        self._tasks = {**Hourly.tasks, **Fixed.tasks}
+        self.hour_tasks = {'Task1': 10, 'Task2': 20}
+        self.fixed_tasks = {'Task3': 500}
+        self._tasks = {**self.hour_tasks, **self.fixed_tasks}
         self.task_name = task_name
-        self._price = None
+        self.price = None
 
     def task_acceptable(self):
         """
@@ -28,19 +30,15 @@ class Task:
         Check what type of payment task has
         :return:
         """
-        if self.task_name in Hourly.tasks:
-            self._price = Hourly(self.task_name).price
-        else:
-            self._price = Fixed(self.task_name).price
-        return self._price
+        return self.price
 
     def get_rate(self):
         """
         Return total price
         :return:
         """
-        self._price = self.get_price()
-        return f"{self._price}$"
+        self.price = self.get_price()
+        return f"{self.price}$"
 
 
 if __name__ == '__main__':

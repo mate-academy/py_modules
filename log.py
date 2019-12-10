@@ -3,6 +3,8 @@ log module
 """
 from worker import Worker
 from task import Task
+from hourly import Hourly
+from fixed import Fixed
 
 
 class MyLog:
@@ -31,6 +33,10 @@ class MyLog:
         Ask user to pay
         :return:
         """
+        if self.task in self.task_confirm.hour_tasks:
+            self.task_confirm.price = Hourly(self.task).price
+        else:
+            self.task_confirm.price = Fixed(self.task).price
         if self.confirm():
             return f"Please pay {self.task_confirm.get_rate()} \
             to {self.worker} for {self.task}!"
